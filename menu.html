@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#321115">
+  <title>Menu | Jawahar Hotel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement">
+    <span>DELHI'S MUGHLAI FOOD HERITAGE</span>
+    <span class="dot">✦</span>
+    <span>SERVING DELICACY SINCE 1940</span>
+    <span class="dot">✦</span>
+    <span>JAMA MASJID · OKHLA · LAJPAT NAGAR</span>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <div class="brand-mark">JH</div>
+      <div class="brand-copy">
+        <strong>JAWAHAR</strong>
+        <small>HOTEL · NEW DELHI · EST. 1940</small>
+      </div>
+    </a>
+    <button class="menu-toggle" id="mobileMenuBtn" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="mainNav">
+      <a class="nav-btn" href="index.html">Home</a>
+      <a class="nav-btn" href="about.html">Our Story</a>
+      <a class="nav-btn active" href="menu.html">Menu</a>
+      <a class="nav-btn" href="services.html">Services</a>
+      <a class="nav-btn" href="contact.html">Locations & Contact</a>
+      <a class="btn btn-primary" href="contact.html">Find a Table <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main id="page-menu">
+    <div class="page-banner">
+      <h1>Restaurant Menu</h1>
+      <p>All items prepared fresh daily with authentic ingredients and traditional recipes.</p>
+    </div>
+
+    <section class="section">
+      <!-- Search Input -->
+      <div class="menu-search-box">
+        <input type="text" id="menuSearchInput" class="menu-search-input" placeholder="Search dish (e.g., Qorma, Biryani, Burra, Khamiri)...">
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="menu-filter-nav">
+        <button class="menu-filter-btn active" data-filter="all">All Items</button>
+        <button class="menu-filter-btn" data-filter="special">Special</button>
+        <button class="menu-filter-btn" data-filter="tandoori & roasted">Tandoori & Roasted</button>
+        <button class="menu-filter-btn" data-filter="mughlai">Mughlai</button>
+        <button class="menu-filter-btn" data-filter="curries">Curries</button>
+        <button class="menu-filter-btn" data-filter="rice & pulao">Rice & Pulao</button>
+        <button class="menu-filter-btn" data-filter="kabab & rolls">Kabab & Rolls</button>
+        <button class="menu-filter-btn" data-filter="veg">Veg</button>
+        <button class="menu-filter-btn" data-filter="roti & naan">Roti & Naan</button>
+        <button class="menu-filter-btn" data-filter="drinks & dessert">Drinks & Dessert</button>
+      </div>
+
+      <!-- Clean List View for Menu -->
+      <div class="menu-list-wrapper">
+  <div class="menu-category-block" data-cat="special">
+    <h3 class="menu-category-title">Special</h3>
+    <ul class="menu-items-list">
+      <li class="menu-item-entry">
+        <span class="item-name">1. Kalmi Kabab</span>
+        <span class="item-line"></span>
+        <span class="item-price">Half: ₹340 | Full: ₹620</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">2. Chicken Pahadi Tikka</span>
+        <span class="item-line"></span>
+        <span class="item-price">Half: ₹330 | Full: ₹600</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">3. Chicken Gilafi Kabab</span>
+        <span class="item-line"></span>
+        <span class="item-price">4 Pcs: ₹380</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">4. Mutton Gilafi Kabab</span>
+        <span class="item-line"></span>
+        <span class="item-price">4 Pcs: ₹420</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">5. Chicken Burra</span>
+        <span class="item-line"></span>
+        <span class="item-price">Half: ₹340 | Full: ₹630</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">6. Irani Kabab</span>
+        <span class="item-line"></span>
+        <span class="item-price">4 Pcs: ₹420</span>
+      </li>
+    </ul>
+  </div>
+  <div class="menu-category-block" data-cat="tandoori & roasted">
+    <h3 class="menu-category-title">Tandoori & Roasted</h3>
+    <ul class="menu-items-list">
+      <li class="menu-item-entry">
+        <span class="item-name">7. Butter Chicken Dahiwala</span>
+        <span class="item-line"></span>
+        <span class="item-price">Qtr: ₹170 | Half: ₹310 | Full: ₹580</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">8. Chicken Fry</span>
+        <span class="item-line"></span>
+        <span class="item-price">Half: ₹280 | Full: ₹520</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">9. Chicken Lollipop</span>
+        <span class="item-line"></span>
+        <span class="item-price">Half: ₹280 | Full: ₹520</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">10. Tandoori Chicken</span>
+        <span class="item-line"></span>
+        <span class="item-price">Half: ₹280 | Full: ₹530</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">11. Chicken Tikka</span>
+        <span class="item-line"></span>
+        <span class="item-price">Half: ₹310 | Full: ₹580</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">12. Chicken Malai Tikka</span>
+        <span class="item-line"></span>
+        <span class="item-price">Half: ₹320 | Full: ₹600</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">13. Chicken Afghani</span>
+        <span class="item-line"></span>
+        <span class="item-price">Half: ₹330 | Full: ₹610</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">14. Mutton Burra</span>
+        <span class="item-line"></span>
+        <span class="item-price">Half: ₹400 | Full: ₹750</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">15. Mutton Burra with Butter Gravy</span>
+        <span class="item-line"></span>
+        <span class="item-price">Half: ₹420 | Full: ₹770</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">16. Tandoori Raan (Serve in 20 min)</span>
+        <span class="item-line"></span>
+        <span class="item-price">Full: ₹1450</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">17. Tandoori Fish (Pomfret 1 pc - Winter)</span>
+        <span class="item-line"></span>
+        <span class="item-price">₹430</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">18. Fish Tikka Surmai (Winter)</span>
+        <span class="item-line"></span>
+        <span class="item-price">Half: ₹440 | Full: ₹800</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">19. Fish Fry Surmai (Winter)</span>
+        <span class="item-line"></span>
+        <span class="item-price">Half: ₹440 | Full: ₹800</span>
+      </li>
+    </ul>
+  </div>
+  <div class="menu-category-block" data-cat="mughlai">
+    <h3 class="menu-category-title">Mughlai</h3>
+    <ul class="menu-items-list">
+      <li class="menu-item-entry">
+        <span class="item-name">20. Mutton Qorma</span>
+        <span class="item-line"></span>
+        <span class="item-price">Half: ₹260 | Full: ₹490</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">21. Mutton Stew</span>
+        <span class="item-line"></span>
+        <span class="item-price">Half: ₹260 | Full: ₹490</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">22. Mutton Kadhai Gosht</span>
+        <span class="item-line"></span>
+        <span class="item-price">Half: ₹270 | Full: ₹500</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">23. Aloo Gosht</span>
+        <span class="item-line"></span>
+        <span class="item-price">Half: ₹260 | Full: ₹490</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">24. Nahari</span>
+        <span class="item-line"></span>
+        <span class="item-price">Half: ₹260 | Full: ₹490</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">25. Paya</span>
+        <span class="item-line"></span>
+        <span class="item-price">Half: ₹260 | Full: ₹490</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">26. Brain Curry</span>
+        <span class="item-line"></span>
+        <span class="item-price">Half: ₹280 | Full: ₹530</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">27. Qeema</span>
+        <span class="item-line"></span>
+        <span class="item-price">Half: ₹260 | Full: ₹490</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">28. Chicken Jahangiri</span>
+        <span class="item-line"></span>
+        <span class="item-price">Qtr: ₹260 | Half: ₹470 | Full: ₹890</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">29. Chicken Mughlai</span>
+        <span class="item-line"></span>
+        <span class="item-price">Qtr: ₹260 | Half: ₹470 | Full: ₹890</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">30. Chicken Stew</span>
+        <span class="item-line"></span>
+        <span class="item-price">Qtr: ₹250 | Half: ₹460 | Full: ₹850</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">31. Murgh Musallam (Order before 2 hrs)</span>
+        <span class="item-line"></span>
+        <span class="item-price">Full: ₹1100</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">32. Handi Gosht</span>
+        <span class="item-line"></span>
+        <span class="item-price">Half: ₹310 | Full: ₹600</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">33. Mutton Jahangiri</span>
+        <span class="item-line"></span>
+        <span class="item-price">Half: ₹290 | Full: ₹540</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">34. Tamatar Gosht</span>
+        <span class="item-line"></span>
+        <span class="item-price">Half: ₹270 | Full: ₹520</span>
+      </li>
+    </ul>
+  </div>
+  <div class="menu-category-block" data-cat="curries">
+    <h3 class="menu-category-title">Curries</h3>
+    <ul class="menu-items-list">
+      <li class="menu-item-entry">
+        <span class="item-name">35. Kali Mirch Chicken</span>
+        <span class="item-line"></span>
+        <span class="item-price">Qtr: ₹260 | Half: ₹480 | Full: ₹840</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">36. Chicken Angara</span>
+        <span class="item-line"></span>
+        <span class="item-price">Qtr: ₹255 | Half: ₹470 | Full: ₹840</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">37. Chicken Do Pyaza</span>
+        <span class="item-line"></span>
+        <span class="item-price">Qtr: ₹250 | Half: ₹470 | Full: ₹840</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">38. Handi Chicken</span>
+        <span class="item-line"></span>
+        <span class="item-price">Qtr: ₹300 | Half: ₹550 | Full: ₹1000</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">39. Butter Chicken</span>
+        <span class="item-line"></span>
+        <span class="item-price">Qtr: ₹260 | Half: ₹480 | Full: ₹840</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">40. Butter Chicken Boneless</span>
+        <span class="item-line"></span>
+        <span class="item-price">Qtr: ₹280 | Half: ₹510 | Full: ₹880</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">41. Chicken Changezi</span>
+        <span class="item-line"></span>
+        <span class="item-price">Qtr: ₹260 | Half: ₹480 | Full: ₹840</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">42. Kadhai Chicken</span>
+        <span class="item-line"></span>
+        <span class="item-price">Qtr: ₹260 | Half: ₹480 | Full: ₹840</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">43. Chicken Masala</span>
+        <span class="item-line"></span>
+        <span class="item-price">Qtr: ₹260 | Half: ₹480 | Full: ₹840</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">44. Chicken Jawahar Special</span>
+        <span class="item-line"></span>
+        <span class="item-price">Qtr: ₹300 | Half: ₹550 | Full: ₹1000</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">45. Chicken Lababdar (Boneless)</span>
+        <span class="item-line"></span>
+        <span class="item-price">Qtr: ₹280 | Half: ₹510 | Full: ₹880</span>
+      </li>
+    </ul>
+  </div>
+  <div class="menu-category-block" data-cat="rice & pulao">
+    <h3 class="menu-category-title">Rice & Pulao</h3>
+    <ul class="menu-items-list">
+      <li class="menu-item-entry">
+        <span class="item-name">48. Mutton Biryani</span>
+        <span class="item-line"></span>
+        <span class="item-price">Half: ₹280 | Full: ₹520</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">49. Chicken Biryani</span>
+        <span class="item-line"></span>
+        <span class="item-price">Half: ₹260 | Full: ₹490</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">50. Veg. Pulao</span>
+        <span class="item-line"></span>
+        <span class="item-price">Half: ₹200 | Full: ₹340</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">51. Plain Rice</span>
+        <span class="item-line"></span>
+        <span class="item-price">Half: ₹120 | Full: ₹200</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">52. Zeera Rice</span>
+        <span class="item-line"></span>
+        <span class="item-price">Half: ₹130 | Full: ₹220</span>
+      </li>
+    </ul>
+  </div>
+  <div class="menu-category-block" data-cat="kabab & rolls">
+    <h3 class="menu-category-title">Kabab & Rolls</h3>
+    <ul class="menu-items-list">
+      <li class="menu-item-entry">
+        <span class="item-name">53. Mutton Seekh Kabab</span>
+        <span class="item-line"></span>
+        <span class="item-price">1 Pc: ₹90</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">54. Mutton Seekh Kabab Butter Gravy</span>
+        <span class="item-line"></span>
+        <span class="item-price">4 Pcs: ₹400</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">55. Chicken Seekh Kabab</span>
+        <span class="item-line"></span>
+        <span class="item-price">1 Pc: ₹80</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">56. Chicken Seekh Kabab Butter Gravy</span>
+        <span class="item-line"></span>
+        <span class="item-price">4 Pcs: ₹360</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">57. Shami Kabab</span>
+        <span class="item-line"></span>
+        <span class="item-price">1 Pc: ₹100</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">58. Mutton Seekh Roll</span>
+        <span class="item-line"></span>
+        <span class="item-price">1 Pc: ₹200</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">59. Chicken Seekh Roll</span>
+        <span class="item-line"></span>
+        <span class="item-price">1 Pc: ₹180</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">60. Chicken Boti Roll</span>
+        <span class="item-line"></span>
+        <span class="item-price">1 Pc: ₹180</span>
+      </li>
+    </ul>
+  </div>
+  <div class="menu-category-block" data-cat="veg">
+    <h3 class="menu-category-title">Veg</h3>
+    <ul class="menu-items-list">
+      <li class="menu-item-entry">
+        <span class="item-name">61. Plain Daal</span>
+        <span class="item-line"></span>
+        <span class="item-price">Full: ₹100</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">62. Daal Makhani</span>
+        <span class="item-line"></span>
+        <span class="item-price">Full: ₹180</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">63. Shahi Paneer</span>
+        <span class="item-line"></span>
+        <span class="item-price">Full: ₹200</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">64. Paneer Tikka</span>
+        <span class="item-line"></span>
+        <span class="item-price">Half: ₹160 | Full: ₹340</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">65. Paneer Do Pyaza</span>
+        <span class="item-line"></span>
+        <span class="item-price">Full: ₹250</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">66. Kadhai Paneer</span>
+        <span class="item-line"></span>
+        <span class="item-price">Full: ₹210</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">67. Mattar Paneer</span>
+        <span class="item-line"></span>
+        <span class="item-price">Full: ₹180</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">68. Paneer Lababdar</span>
+        <span class="item-line"></span>
+        <span class="item-price">Full: ₹220</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">69. Nizami Handi</span>
+        <span class="item-line"></span>
+        <span class="item-price">Full: ₹240</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">70. Tandoori Vegetables</span>
+        <span class="item-line"></span>
+        <span class="item-price">Full: ₹200</span>
+      </li>
+    </ul>
+  </div>
+  <div class="menu-category-block" data-cat="roti & naan">
+    <h3 class="menu-category-title">Roti & Naan</h3>
+    <ul class="menu-items-list">
+      <li class="menu-item-entry">
+        <span class="item-name">71. Tandoori Roti</span>
+        <span class="item-line"></span>
+        <span class="item-price">₹15</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">72. Khamiri Roti</span>
+        <span class="item-line"></span>
+        <span class="item-price">₹20</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">73. Butter Khamiri Roti</span>
+        <span class="item-line"></span>
+        <span class="item-price">₹25</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">74. Rumali Roti</span>
+        <span class="item-line"></span>
+        <span class="item-price">₹10</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">75. Butter Tandoori Roti</span>
+        <span class="item-line"></span>
+        <span class="item-price">₹20</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">76. Sheer Maal</span>
+        <span class="item-line"></span>
+        <span class="item-price">₹100</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">77. Plain Naan</span>
+        <span class="item-line"></span>
+        <span class="item-price">₹80</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">78. Qeema Naan</span>
+        <span class="item-line"></span>
+        <span class="item-price">₹160</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">79. Butter Naan</span>
+        <span class="item-line"></span>
+        <span class="item-price">₹100</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">80. Paneer Prantha</span>
+        <span class="item-line"></span>
+        <span class="item-price">₹80</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">81. Lachcha Parantha</span>
+        <span class="item-line"></span>
+        <span class="item-price">₹60</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">82. Garlic Naan</span>
+        <span class="item-line"></span>
+        <span class="item-price">₹100</span>
+      </li>
+    </ul>
+  </div>
+  <div class="menu-category-block" data-cat="drinks & dessert">
+    <h3 class="menu-category-title">Drinks & Dessert</h3>
+    <ul class="menu-items-list">
+      <li class="menu-item-entry">
+        <span class="item-name">83. Soft Drink</span>
+        <span class="item-line"></span>
+        <span class="item-price">MRP</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">84. Kheer</span>
+        <span class="item-line"></span>
+        <span class="item-price">₹50</span>
+      </li>
+      <li class="menu-item-entry">
+        <span class="item-name">85. Gulab Jamun</span>
+        <span class="item-line"></span>
+        <span class="item-price">₹60</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+      <div style="background: var(--wine); color: #fff; border-radius: var(--radius-md); padding: 32px; text-align: center; margin-top: 50px;">
+        <h3 style="font-family: var(--serif); font-size: 1.6rem; margin-bottom: 8px;">Direct Orders & Takeaway</h3>
+        <p style="color: var(--gold-light); font-size: 0.95rem; margin-bottom: 20px;">Fresh deghs are prepared daily for lunch and dinner. Call our central order desk for pickup.</p>
+        <a href="tel:+917827927335" class="btn btn-gold">Call +91 78279 27335</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-col">
+        <h4 style="font-family: var(--serif); font-size: 1.3rem; color: #fff;">JAWAHAR HOTEL</h4>
+        <p>Serving authentic Mughlai delicacies in Old Delhi since 1940. Unbroken tradition of degh cooking and hospitality across three Delhi locations.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="services.html">Services & Catering</a></li>
+          <li><a href="contact.html">Locations & Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Delhi Outlets</h4>
+        <ul>
+          <li><a href="contact.html">Jama Masjid (Matia Mahal)</a></li>
+          <li><a href="contact.html">Okhla (Abul Fazal Enclave)</a></li>
+          <li><a href="contact.html">Lajpat Nagar II</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Jawahar Hotel. All Rights Reserved.</span>
+      <span>Authentic Mughlai Cuisine Since 1940</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+</html>

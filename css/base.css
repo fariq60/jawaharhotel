@@ -1,0 +1,37 @@
+:root {
+  --ink: #1f1414;
+  --wine: #481a20;
+  --wine-deep: #2e1014;
+  --wine-light: #64282f;
+  --gold: #c69c3a;
+  --gold-light: #f5e4b7;
+  --paper: #f8f4ee;
+  --card-bg: #ffffff;
+  --muted: #6e645e;
+  --line: rgba(72, 26, 32, 0.1);
+  --serif: "Playfair Display", Georgia, serif;
+  --sans: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+
+
+main { animation: fadeIn 0.3s ease; }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}

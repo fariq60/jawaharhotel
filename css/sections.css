@@ -1,0 +1,204 @@
+/* Common Section */
+.section {
+  padding: 70px 6%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.section-title-wrap {
+  text-align: center;
+  margin-bottom: 45px;
+}
+.section-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  font-weight: 700;
+  color: var(--wine);
+  margin-bottom: 8px;
+}
+.section-title {
+  font-family: var(--serif);
+  font-size: clamp(1.9rem, 3.2vw, 2.6rem);
+  color: var(--wine);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.section-desc {
+  font-size: 0.95rem;
+  color: var(--muted);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Grounded Heritage Pillars (No Emojis) */
+.heritage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px;
+}
+.heritage-card {
+  background: var(--card-bg);
+  border-radius: var(--radius-md);
+  padding: 32px 28px;
+  border: 1px solid var(--line);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+}
+.heritage-card-index {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 12px;
+  display: inline-block;
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 2px;
+}
+.heritage-card h3 {
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  color: var(--wine);
+  margin-bottom: 10px;
+}
+.heritage-card p {
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+/* Signatures Showcase (Normal Names & Real Photos) */
+.dish-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+.dish-card {
+  background: var(--card-bg);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+}
+.dish-photo {
+  height: 220px;
+  width: 100%;
+  background: #e8e2d8;
+  overflow: hidden;
+}
+.dish-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.dish-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.dish-body h3 {
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  color: var(--wine);
+  margin-bottom: 8px;
+}
+.dish-body p {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+.dish-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+}
+.dish-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--wine);
+}
+.dish-price small {
+  font-size: 0.72rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+/* Quote Banner */
+.quote-banner {
+  background: var(--wine);
+  color: #fff;
+  text-align: center;
+  padding: 60px 6%;
+  margin: 40px 0;
+}
+.quote-banner blockquote {
+  font-family: var(--serif);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  max-width: 800px;
+  margin: 0 auto 12px;
+  line-height: 1.3;
+}
+.quote-banner blockquote em {
+  color: var(--gold-light);
+  font-style: italic;
+}
+.quote-banner p {
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  color: var(--gold-light);
+  font-weight: 700;
+}
+
+/* Locations Grid */
+.location-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+}
+.location-box {
+  background: var(--card-bg);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  border: 1px solid var(--line);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+}
+.location-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--gold);
+  margin-bottom: 6px;
+}
+.location-box h3 {
+  font-family: var(--serif);
+  font-size: 1.55rem;
+  color: var(--wine);
+  margin-bottom: 10px;
+}
+.location-address {
+  font-size: 0.92rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+.location-details {
+  font-size: 0.85rem;
+  color: var(--ink);
+  margin-bottom: 22px;
+  line-height: 1.7;
+}
+.location-details strong {
+  color: var(--wine);
+}
+.location-actions {
+  margin-top: auto;
+  display: flex;
+  gap: 12px;
+}

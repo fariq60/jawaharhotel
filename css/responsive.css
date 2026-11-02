@@ -1,0 +1,27 @@
+@media (max-width: 900px) {
+  .hero-container { grid-template-columns: 1fr; gap: 35px; }
+  .hero-image-card img { height: 280px; }
+  .menu-list-wrapper { grid-template-columns: 1fr; }
+  .footer-top { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .menu-toggle { display: flex; }
+  .nav {
+    display: none;
+    position: absolute;
+    top: 86px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    padding: 20px 6%;
+    gap: 14px;
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  }
+  .nav.open { display: flex; }
+  .nav-btn.active::after { display: none; }
+  .item-name { font-size: 0.85rem; }
+  .item-price { font-size: 0.82rem; }
+}

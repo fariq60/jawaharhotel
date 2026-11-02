@@ -1,0 +1,93 @@
+/* Menu List Styles (Clean Restaurant List Layout) */
+.menu-search-box {
+  max-width: 480px;
+  margin: 0 auto 35px;
+}
+.menu-search-input {
+  width: 100%;
+  padding: 13px 20px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--line);
+  background: #fff;
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  outline: none;
+}
+.menu-search-input:focus {
+  border-color: var(--gold);
+}
+.menu-filter-nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.menu-filter-btn {
+  background: #fff;
+  border: 1px solid var(--line);
+  padding: 8px 18px;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink);
+  cursor: pointer;
+  font-family: var(--sans);
+}
+.menu-filter-btn:hover, .menu-filter-btn.active {
+  background: var(--wine);
+  color: #fff;
+  border-color: var(--wine);
+}
+.menu-list-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+  gap: 36px;
+}
+.menu-category-block {
+  background: var(--card-bg);
+  border-radius: var(--radius-md);
+  padding: 28px 24px;
+  border: 1px solid var(--line);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
+}
+.menu-category-title {
+  font-family: var(--serif);
+  font-size: 1.45rem;
+  color: var(--wine);
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 1.5px solid var(--gold);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-items-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.menu-item-entry {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 0.92rem;
+}
+.item-name {
+  font-weight: 600;
+  color: var(--ink);
+  white-space: nowrap;
+}
+.item-line {
+  flex-grow: 1;
+  border-bottom: 1px dotted rgba(72, 26, 32, 0.25);
+  margin: 0 4px;
+}
+.item-price {
+  font-weight: 700;
+  color: var(--wine);
+  white-space: nowrap;
+  font-size: 0.88rem;
+}
